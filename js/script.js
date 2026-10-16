@@ -353,7 +353,7 @@
 
     const image = new Image();
 
-    image.src = `assets/${color}.png`;
+    image.src = `assets/${color}.webp`;
 
     imageCache.set(color, image);
 
@@ -506,9 +506,7 @@
 
           });
 
-          console.error(
-            `No se encontró assets/${color}.png`
-          );
+          console.error(`No se encontró assets/${color}.webp`);
 
         },
         { once: true }
